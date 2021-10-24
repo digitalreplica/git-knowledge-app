@@ -1,3 +1,6 @@
+# Local files
+src/assets/knowledge.json
+
 # Logs
 logs
 *.log
