@@ -16,6 +16,7 @@ export interface NoteMap {
 }
 
 let tokens_data: TokenMap = KnowledgeData.tokens
+let notes_data: NoteMap = KnowledgeData.files
 
 @Injectable({
   providedIn: 'root'
@@ -26,5 +27,9 @@ export class KnowledgeService {
 
   getTokens() {
     return tokens_data;
+  }
+
+  getNote(noteName: string): NoteDetails {
+    return notes_data[noteName]
   }
 }

@@ -1,5 +1,6 @@
 # Local files
 src/assets/knowledge.json
+.DS_Store
 
 # Logs
 logs

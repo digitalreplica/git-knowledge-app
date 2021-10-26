@@ -1,0 +1,5 @@
+<mat-selection-list #tokenSelection [multiple]="false">
+  <mat-list-option *ngFor="let token of tokenName" [value]="token" (click)="selectNote(token)">
+    {{token}}
+  </mat-list-option>
+</mat-selection-list>
