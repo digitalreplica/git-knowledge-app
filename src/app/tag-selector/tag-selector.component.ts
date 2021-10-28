@@ -34,6 +34,14 @@ export class TagSelectorComponent implements OnInit {
     this.allFruits = this.knowledgeService.getTags();
   }
 
+  clear() {
+    this.fruits = []
+    this.notes = new Set([])
+
+    // Clear the input value
+    this.fruitCtrl.setValue(null);
+  }
+
   add(event: MatChipInputEvent): void {
     const value = (event.value || '').trim();
 
@@ -47,8 +55,7 @@ export class TagSelectorComponent implements OnInit {
 
     // Clear the input value
     event.chipInput!.clear();
-
-    //this.fruitCtrl.setValue(null);
+    this.fruitCtrl.setValue(null);
   }
 
   remove(fruit: string): void {

@@ -1,4 +1,8 @@
 <mat-toolbar color="primary">
   <span>{{ title }}</span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button aria-label="Restart" (click)="tagSelector.clear()">
+    <mat-icon>restart_alt</mat-icon>
+  </button>
 </mat-toolbar>
-<app-tokens></app-tokens>
+<app-tag-selector #tagSelector></app-tag-selector>
