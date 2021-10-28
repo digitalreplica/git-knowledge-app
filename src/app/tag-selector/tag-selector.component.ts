@@ -3,9 +3,11 @@ import {Component, OnInit, ElementRef, ViewChild} from '@angular/core';
 import {FormControl} from '@angular/forms';
 import {MatAutocompleteSelectedEvent} from '@angular/material/autocomplete';
 import {MatChipInputEvent} from '@angular/material/chips';
+import { MatSort, Sort } from '@angular/material/sort';
+import {MatTable,MatTableDataSource} from '@angular/material/table';
 import {Observable} from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
-import { KnowledgeService } from '../knowledge.service';
+import { KnowledgeService, NoteDetails } from '../knowledge.service';
 
 @Component({
   selector: 'app-tag-selector',
@@ -20,9 +22,14 @@ export class TagSelectorComponent implements OnInit {
   filteredTags: Observable<string[]>;
   selectedTags: string[] = [];
   allTags: string[] = [];
-  taggedNotes: Set<string> = new Set([]);
+  taggedNotes: string[] = [];
+  taggedNotesDetails: NoteDetails[] = [];
+  displayedColumns: string[] = ['path', 'size', 'last_modified', 'repo', 'html_url'];
+  dataSource = new MatTableDataSource(this.taggedNotesDetails);
 
   @ViewChild('tagInput') tagInput!: ElementRef<HTMLInputElement>;
+  @ViewChild(MatTable) table!: MatTable<any>;
+  @ViewChild(MatSort) sort!: MatSort;
 
   constructor(private knowledgeService: KnowledgeService) {
     this.filteredTags = this.tagCtrl.valueChanges.pipe(
@@ -33,10 +40,16 @@ export class TagSelectorComponent implements OnInit {
   ngOnInit(): void {
     this.allTags = this.knowledgeService.getTags();
   }
+  ngAfterViewInit() {
+    this.dataSource.sort = this.sort;
+  }
 
   clear() {
     this.selectedTags = []
-    this.taggedNotes = new Set([])
+    this.taggedNotes = []
+    this.taggedNotesDetails = []
+    this.dataSource.data = this.taggedNotesDetails
+    //this.table.renderRows();
 
     // Clear the input value
     this.tagCtrl.setValue(null);
@@ -50,6 +63,9 @@ export class TagSelectorComponent implements OnInit {
       if (this.allTags.indexOf(value) >= 0) {
         this.selectedTags.push(value);
         this.taggedNotes = this.knowledgeService.getNotes(this.selectedTags);
+        this.taggedNotesDetails = this.knowledgeService.getNotesDetails(this.selectedTags);
+        this.dataSource.data = this.taggedNotesDetails
+        //this.table.renderRows();
       }
     }
 
@@ -64,6 +80,9 @@ export class TagSelectorComponent implements OnInit {
     if (index >= 0) {
       this.selectedTags.splice(index, 1);
       this.taggedNotes = this.knowledgeService.getNotes(this.selectedTags);
+      this.taggedNotesDetails = this.knowledgeService.getNotesDetails(this.selectedTags);
+      this.dataSource.data = this.taggedNotesDetails
+      //this.table.renderRows();
     }
   }
 
@@ -72,6 +91,9 @@ export class TagSelectorComponent implements OnInit {
     this.tagInput.nativeElement.value = '';
     this.tagCtrl.setValue(null);
     this.taggedNotes = this.knowledgeService.getNotes(this.selectedTags);
+    this.taggedNotesDetails = this.knowledgeService.getNotesDetails(this.selectedTags);
+    this.dataSource.data = this.taggedNotesDetails
+    //this.table.renderRows();
   }
 
   private _filter(value: string): string[] {
