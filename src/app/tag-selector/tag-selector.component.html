@@ -1,33 +1,33 @@
 <mat-form-field class="example-chip-list" appearance="fill">
-  <mat-label>Tags</mat-label>
+  <mat-label>Select Tags</mat-label>
   <mat-chip-list #chipList aria-label="Tag selection">
     <mat-chip
-      *ngFor="let fruit of fruits"
-      [selectable]="selectable"
-      [removable]="removable"
-      (removed)="remove(fruit)">
-      {{fruit}}
-      <button matChipRemove *ngIf="removable">
+      *ngFor="let tag of selectedTags"
+      [selectable]="selectableChip"
+      [removable]="removableChip"
+      (removed)="remove(tag)">
+      {{tag}}
+      <button matChipRemove *ngIf="removableChip">
         <mat-icon>cancel</mat-icon>
       </button>
     </mat-chip>
     <input
-      placeholder="Select tag..."
-      #fruitInput
-      [formControl]="fruitCtrl"
+      placeholder="Tag name..."
+      #tagInput
+      [formControl]="tagCtrl"
       [matAutocomplete]="auto"
       [matChipInputFor]="chipList"
       [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
       (matChipInputTokenEnd)="add($event)">
   </mat-chip-list>
   <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
-    <mat-option *ngFor="let fruit of filteredFruits | async" [value]="fruit">
-      {{fruit}}
+    <mat-option *ngFor="let tag of filteredTags | async" [value]="tag">
+      {{tag}}
     </mat-option>
   </mat-autocomplete>
 </mat-form-field>
 <mat-selection-list #noteSelection [multiple]="false">
-  <mat-list-option *ngFor="let note of notes" [value]="note">
+  <mat-list-option *ngFor="let note of taggedNotes" [value]="note">
     <app-note-detail [noteName]="note"></app-note-detail>
   </mat-list-option>
 </mat-selection-list>

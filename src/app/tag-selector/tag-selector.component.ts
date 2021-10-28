@@ -13,70 +13,70 @@ import { KnowledgeService } from '../knowledge.service';
   styleUrls: ['./tag-selector.component.css']
 })
 export class TagSelectorComponent implements OnInit {
-  selectable = true;
-  removable = true;
+  selectableChip = true;
+  removableChip = true;
   separatorKeysCodes: number[] = [ENTER, COMMA];
-  fruitCtrl = new FormControl();
-  filteredFruits: Observable<string[]>;
-  fruits: string[] = [];
-  allFruits: string[] = [];
-  notes: Set<string> = new Set([]);
+  tagCtrl = new FormControl();
+  filteredTags: Observable<string[]>;
+  selectedTags: string[] = [];
+  allTags: string[] = [];
+  taggedNotes: Set<string> = new Set([]);
 
-  @ViewChild('fruitInput') fruitInput!: ElementRef<HTMLInputElement>;
+  @ViewChild('tagInput') tagInput!: ElementRef<HTMLInputElement>;
 
   constructor(private knowledgeService: KnowledgeService) {
-    this.filteredFruits = this.fruitCtrl.valueChanges.pipe(
+    this.filteredTags = this.tagCtrl.valueChanges.pipe(
         startWith(null),
-        map((fruit: string | null) => fruit ? this._filter(fruit) : this.allFruits.slice()));
+        map((tag: string | null) => tag ? this._filter(tag) : this.allTags.slice()));
   }
 
   ngOnInit(): void {
-    this.allFruits = this.knowledgeService.getTags();
+    this.allTags = this.knowledgeService.getTags();
   }
 
   clear() {
-    this.fruits = []
-    this.notes = new Set([])
+    this.selectedTags = []
+    this.taggedNotes = new Set([])
 
     // Clear the input value
-    this.fruitCtrl.setValue(null);
+    this.tagCtrl.setValue(null);
   }
 
   add(event: MatChipInputEvent): void {
     const value = (event.value || '').trim();
 
-    // Add our fruit if in list
+    // Add our tag if in list
     if (value) {
-      if (this.allFruits.indexOf(value) >= 0) {
-        this.fruits.push(value);
-        this.notes = this.knowledgeService.getNotes(this.fruits);
+      if (this.allTags.indexOf(value) >= 0) {
+        this.selectedTags.push(value);
+        this.taggedNotes = this.knowledgeService.getNotes(this.selectedTags);
       }
     }
 
     // Clear the input value
     event.chipInput!.clear();
-    this.fruitCtrl.setValue(null);
+    this.tagCtrl.setValue(null);
   }
 
-  remove(fruit: string): void {
-    const index = this.fruits.indexOf(fruit);
+  remove(tag: string): void {
+    const index = this.selectedTags.indexOf(tag);
 
     if (index >= 0) {
-      this.fruits.splice(index, 1);
-      this.notes = this.knowledgeService.getNotes(this.fruits);
+      this.selectedTags.splice(index, 1);
+      this.taggedNotes = this.knowledgeService.getNotes(this.selectedTags);
     }
   }
 
   selected(event: MatAutocompleteSelectedEvent): void {
-    this.fruits.push(event.option.viewValue);
-    this.fruitInput.nativeElement.value = '';
-    this.fruitCtrl.setValue(null);
-    this.notes = this.knowledgeService.getNotes(this.fruits);
+    this.selectedTags.push(event.option.viewValue);
+    this.tagInput.nativeElement.value = '';
+    this.tagCtrl.setValue(null);
+    this.taggedNotes = this.knowledgeService.getNotes(this.selectedTags);
   }
 
   private _filter(value: string): string[] {
     const filterValue = value.toLowerCase();
 
-    return this.allFruits.filter(fruit => fruit.toLowerCase().includes(filterValue));
+    return this.allTags.filter(tag => tag.toLowerCase().includes(filterValue));
   }
 }
