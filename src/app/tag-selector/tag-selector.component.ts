@@ -22,7 +22,7 @@ export class TagSelectorComponent implements OnInit {
   filteredTags: Observable<string[]>;
   selectedTags: string[] = [];
   allTags: string[] = [];
-  taggedNotes: string[] = [];
+  //taggedNotes: string[] = [];
   taggedNotesDetails: NoteDetails[] = [];
   displayedColumns: string[] = ['path', 'size', 'last_modified', 'repo', 'html_url'];
   dataSource = new MatTableDataSource(this.taggedNotesDetails);
@@ -46,7 +46,7 @@ export class TagSelectorComponent implements OnInit {
 
   clear() {
     this.selectedTags = []
-    this.taggedNotes = []
+    //this.taggedNotes = []
     this.taggedNotesDetails = []
     this.dataSource.data = this.taggedNotesDetails
     //this.table.renderRows();
@@ -62,7 +62,7 @@ export class TagSelectorComponent implements OnInit {
     if (value) {
       if (this.allTags.indexOf(value) >= 0) {
         this.selectedTags.push(value);
-        this.taggedNotes = this.knowledgeService.getNotes(this.selectedTags);
+        //this.taggedNotes = this.knowledgeService.getNotes(this.selectedTags);
         this.taggedNotesDetails = this.knowledgeService.getNotesDetails(this.selectedTags);
         this.dataSource.data = this.taggedNotesDetails
         //this.table.renderRows();
@@ -79,9 +79,9 @@ export class TagSelectorComponent implements OnInit {
 
     if (index >= 0) {
       this.selectedTags.splice(index, 1);
-      this.taggedNotes = this.knowledgeService.getNotes(this.selectedTags);
+      //this.taggedNotes = this.knowledgeService.getNotes(this.selectedTags);
       this.taggedNotesDetails = this.knowledgeService.getNotesDetails(this.selectedTags);
-      this.dataSource.data = this.taggedNotesDetails
+      this.dataSource.data = this.taggedNotesDetails;
       //this.table.renderRows();
     }
   }
@@ -90,7 +90,7 @@ export class TagSelectorComponent implements OnInit {
     this.selectedTags.push(event.option.viewValue);
     this.tagInput.nativeElement.value = '';
     this.tagCtrl.setValue(null);
-    this.taggedNotes = this.knowledgeService.getNotes(this.selectedTags);
+    //this.taggedNotes = this.knowledgeService.getNotes(this.selectedTags);
     this.taggedNotesDetails = this.knowledgeService.getNotesDetails(this.selectedTags);
     this.dataSource.data = this.taggedNotesDetails
     //this.table.renderRows();

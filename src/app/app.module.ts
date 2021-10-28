@@ -17,17 +17,11 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table'
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { AppComponent } from './app.component';
-import { TokensComponent } from './tokens/tokens.component';
-import { TokenDetailComponent } from './token-detail/token-detail.component';
-import { NoteDetailComponent } from './note-detail/note-detail.component';
 import { TagSelectorComponent } from './tag-selector/tag-selector.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TokensComponent,
-    TokenDetailComponent,
-    NoteDetailComponent,
     TagSelectorComponent
   ],
   imports: [

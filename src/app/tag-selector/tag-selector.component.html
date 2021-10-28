@@ -64,9 +64,3 @@
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
-
-<!--<mat-selection-list #noteSelection [multiple]="false">
-  <mat-list-option *ngFor="let note of taggedNotes" [value]="note">
-    <app-note-detail [noteName]="note"></app-note-detail>
-  </mat-list-option>
-</mat-selection-list>-->
