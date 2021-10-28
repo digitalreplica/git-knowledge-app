@@ -15,8 +15,15 @@ export interface NoteMap {
   [index: string]: NoteDetails;
 }
 
+export interface Tag {
+  name: string,
+  notes: string[],
+  count: number
+}
+
 let tokens_data: TokenMap = KnowledgeData.tokens
 let notes_data: NoteMap = KnowledgeData.files
+let tags_data: Tag[] = KnowledgeData.tags
 
 @Injectable({
   providedIn: 'root'
@@ -31,5 +38,19 @@ export class KnowledgeService {
 
   getNote(noteName: string): NoteDetails {
     return notes_data[noteName]
+  }
+
+  getTags(): string[] {
+    return Object.keys(tokens_data).sort()
+  }
+
+  getNotes(tagNames: string[]): Set<string> {
+    let notes: string[] = tokens_data[tagNames[0]]
+    for(var i = 1;i<tagNames.length;i++) {
+      notes = notes.filter(function(noteName){
+        return (tokens_data[tagNames[i]].indexOf(noteName) >= 0);
+      })
+    }
+    return new Set(notes)
   }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import { KnowledgeService } from '../knowledge.service';
 export interface TokenMap {
   [index: string]: string[];
@@ -19,7 +19,7 @@ export class TokensComponent implements OnInit {
   step = 0;
   tokens: TokenMap = {};
   noteName: string = "";
-  
+
 
   constructor(private knowledgeService: KnowledgeService) {
     console.log("Hello")
