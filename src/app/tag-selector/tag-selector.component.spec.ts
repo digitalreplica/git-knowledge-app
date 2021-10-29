@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TokenDetailComponent } from './token-detail.component';
+import { TagSelectorComponent } from './tag-selector.component';
 
-describe('TokenDetailComponent', () => {
-  let component: TokenDetailComponent;
-  let fixture: ComponentFixture<TokenDetailComponent>;
+describe('TagSelectorComponent', () => {
+  let component: TagSelectorComponent;
+  let fixture: ComponentFixture<TagSelectorComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TokenDetailComponent ]
+      declarations: [ TagSelectorComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TokenDetailComponent);
+    fixture = TestBed.createComponent(TagSelectorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
