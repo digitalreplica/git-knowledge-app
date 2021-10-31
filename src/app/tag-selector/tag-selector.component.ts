@@ -24,7 +24,7 @@ export class TagSelectorComponent implements OnInit {
   allTags: string[] = [];
   //taggedNotes: string[] = [];
   taggedNotesDetails: NoteDetails[] = [];
-  displayedColumns: string[] = ['path', 'size', 'last_modified', 'repo', 'html_url'];
+  displayedColumns: string[] = ['path', 'size', 'repo', 'html_url'];
   dataSource = new MatTableDataSource(this.taggedNotesDetails);
 
   @ViewChild('tagInput') tagInput!: ElementRef<HTMLInputElement>;

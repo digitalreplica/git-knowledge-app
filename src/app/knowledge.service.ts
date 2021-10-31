@@ -9,7 +9,7 @@ export interface NoteDetails {
   path: string;
   repo: string;
   size: number;
-  last_modified: string;
+  //last_modified: string;
   html_url: string;
 }
 
@@ -23,9 +23,9 @@ export interface Tag {
   count: number
 }
 
-let tokens_data: TokenMap = KnowledgeData.tokens
+let tokens_data: TokenMap = KnowledgeData.tags
 let notes_data: NoteMap = KnowledgeData.files
-let tags_data: Tag[] = KnowledgeData.tags
+//let tags_data: Tag[] = KnowledgeData.tags
 
 @Injectable({
   providedIn: 'root'
