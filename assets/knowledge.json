@@ -1,0 +1,900 @@
+{
+ "tags": {
+  "digitalreplica": [
+   "digitalreplica/hacking/README.md",
+   "digitalreplica/hacking/angular.md",
+   "digitalreplica/hacking/aws-iam_assume_role.md",
+   "digitalreplica/hacking/aws-s3.md",
+   "digitalreplica/hacking/aws-tokens.md",
+   "digitalreplica/hacking/aws.md",
+   "digitalreplica/hacking/bash.md",
+   "digitalreplica/hacking/browsers.md",
+   "digitalreplica/hacking/dns-recon.md",
+   "digitalreplica/hacking/dns-spoofing.md",
+   "digitalreplica/hacking/howto-fake_email.md",
+   "digitalreplica/hacking/howto-local_web_server.md",
+   "digitalreplica/hacking/kali.md",
+   "digitalreplica/hacking/malware.md",
+   "digitalreplica/hacking/mitmproxy.md",
+   "digitalreplica/hacking/mongo.md",
+   "digitalreplica/hacking/nmap.md",
+   "digitalreplica/hacking/nodegoat.md",
+   "digitalreplica/hacking/openapi.md",
+   "digitalreplica/hacking/operating_systems.md",
+   "digitalreplica/hacking/reverse shell.md",
+   "digitalreplica/hacking/rfid_badge_reader.md",
+   "digitalreplica/hacking/rootabaga.md",
+   "digitalreplica/hacking/saml.md",
+   "digitalreplica/hacking/smtp.md",
+   "digitalreplica/hacking/sqlmap.md",
+   "digitalreplica/hacking/ssrf.md",
+   "digitalreplica/hacking/tools-burp.md",
+   "digitalreplica/hacking/tools-firefox.md",
+   "digitalreplica/hacking/tools-ngrok.md",
+   "digitalreplica/hacking/tools-nuclei.md",
+   "digitalreplica/hacking/tools-oclhashcat.md",
+   "digitalreplica/hacking/tools-recon_ng.md",
+   "digitalreplica/hacking/tools-testssl.md",
+   "digitalreplica/hacking/web-html.md",
+   "digitalreplica/hacking/web-node_js.md",
+   "digitalreplica/hacking/web-postmessage.md",
+   "digitalreplica/hacking/web-xss.md",
+   "digitalreplica/hacking/webfilters.md",
+   "digitalreplica/hacking/wireless.md",
+   "digitalreplica/hacking/writing-exploits.md",
+   "digitalreplica/technology/README.md",
+   "digitalreplica/technology/ai.md",
+   "digitalreplica/technology/anaconda.md",
+   "digitalreplica/technology/angular.md",
+   "digitalreplica/technology/atom.md",
+   "digitalreplica/technology/aws.md",
+   "digitalreplica/technology/bash.md",
+   "digitalreplica/technology/cucumber.md",
+   "digitalreplica/technology/curl.md",
+   "digitalreplica/technology/firefox.md",
+   "digitalreplica/technology/git.md",
+   "digitalreplica/technology/github.md",
+   "digitalreplica/technology/graphql.md",
+   "digitalreplica/technology/http.md",
+   "digitalreplica/technology/jq.md",
+   "digitalreplica/technology/linux.md",
+   "digitalreplica/technology/macos.md",
+   "digitalreplica/technology/markdown.md",
+   "digitalreplica/technology/node_js.md",
+   "digitalreplica/technology/openwrt.md",
+   "digitalreplica/technology/python.md",
+   "digitalreplica/technology/raspberry_pi.md",
+   "digitalreplica/technology/redis.md",
+   "digitalreplica/technology/unicode.md",
+   "digitalreplica/technology/uuid.md",
+   "digitalreplica/technology/webhooks.md",
+   "digitalreplica/technology/zsh.md",
+   "digitalreplica/git-notes/README.md",
+   "digitalreplica/git-notes/advanced-topics.md",
+   "digitalreplica/git-knowledge/README.md",
+   "digitalreplica/git-knowledge/musings.md"
+  ],
+  "hacking": [
+   "digitalreplica/hacking/README.md",
+   "digitalreplica/hacking/angular.md",
+   "digitalreplica/hacking/aws-iam_assume_role.md",
+   "digitalreplica/hacking/aws-s3.md",
+   "digitalreplica/hacking/aws-tokens.md",
+   "digitalreplica/hacking/aws.md",
+   "digitalreplica/hacking/bash.md",
+   "digitalreplica/hacking/browsers.md",
+   "digitalreplica/hacking/dns-recon.md",
+   "digitalreplica/hacking/dns-spoofing.md",
+   "digitalreplica/hacking/howto-fake_email.md",
+   "digitalreplica/hacking/howto-local_web_server.md",
+   "digitalreplica/hacking/kali.md",
+   "digitalreplica/hacking/malware.md",
+   "digitalreplica/hacking/mitmproxy.md",
+   "digitalreplica/hacking/mongo.md",
+   "digitalreplica/hacking/nmap.md",
+   "digitalreplica/hacking/nodegoat.md",
+   "digitalreplica/hacking/openapi.md",
+   "digitalreplica/hacking/operating_systems.md",
+   "digitalreplica/hacking/reverse shell.md",
+   "digitalreplica/hacking/rfid_badge_reader.md",
+   "digitalreplica/hacking/rootabaga.md",
+   "digitalreplica/hacking/saml.md",
+   "digitalreplica/hacking/smtp.md",
+   "digitalreplica/hacking/sqlmap.md",
+   "digitalreplica/hacking/ssrf.md",
+   "digitalreplica/hacking/tools-burp.md",
+   "digitalreplica/hacking/tools-firefox.md",
+   "digitalreplica/hacking/tools-ngrok.md",
+   "digitalreplica/hacking/tools-nuclei.md",
+   "digitalreplica/hacking/tools-oclhashcat.md",
+   "digitalreplica/hacking/tools-recon_ng.md",
+   "digitalreplica/hacking/tools-testssl.md",
+   "digitalreplica/hacking/web-html.md",
+   "digitalreplica/hacking/web-node_js.md",
+   "digitalreplica/hacking/web-postmessage.md",
+   "digitalreplica/hacking/web-xss.md",
+   "digitalreplica/hacking/webfilters.md",
+   "digitalreplica/hacking/wireless.md",
+   "digitalreplica/hacking/writing-exploits.md"
+  ],
+  "readme": [
+   "digitalreplica/hacking/README.md",
+   "digitalreplica/technology/README.md",
+   "digitalreplica/git-notes/README.md",
+   "digitalreplica/git-knowledge/README.md"
+  ],
+  "angular": [
+   "digitalreplica/hacking/angular.md",
+   "digitalreplica/technology/angular.md"
+  ],
+  "aws": [
+   "digitalreplica/hacking/aws-iam_assume_role.md",
+   "digitalreplica/hacking/aws-s3.md",
+   "digitalreplica/hacking/aws-tokens.md",
+   "digitalreplica/hacking/aws.md",
+   "digitalreplica/technology/aws.md"
+  ],
+  "iam_assume_role": [
+   "digitalreplica/hacking/aws-iam_assume_role.md"
+  ],
+  "s3": [
+   "digitalreplica/hacking/aws-s3.md"
+  ],
+  "tokens": [
+   "digitalreplica/hacking/aws-tokens.md"
+  ],
+  "bash": [
+   "digitalreplica/hacking/bash.md",
+   "digitalreplica/technology/bash.md"
+  ],
+  "browsers": [
+   "digitalreplica/hacking/browsers.md"
+  ],
+  "dns": [
+   "digitalreplica/hacking/dns-recon.md",
+   "digitalreplica/hacking/dns-spoofing.md"
+  ],
+  "recon": [
+   "digitalreplica/hacking/dns-recon.md"
+  ],
+  "spoofing": [
+   "digitalreplica/hacking/dns-spoofing.md"
+  ],
+  "howto": [
+   "digitalreplica/hacking/howto-fake_email.md",
+   "digitalreplica/hacking/howto-local_web_server.md"
+  ],
+  "fake_email": [
+   "digitalreplica/hacking/howto-fake_email.md"
+  ],
+  "local_web_server": [
+   "digitalreplica/hacking/howto-local_web_server.md"
+  ],
+  "kali": [
+   "digitalreplica/hacking/kali.md"
+  ],
+  "malware": [
+   "digitalreplica/hacking/malware.md"
+  ],
+  "mitmproxy": [
+   "digitalreplica/hacking/mitmproxy.md"
+  ],
+  "mongo": [
+   "digitalreplica/hacking/mongo.md"
+  ],
+  "nmap": [
+   "digitalreplica/hacking/nmap.md"
+  ],
+  "nodegoat": [
+   "digitalreplica/hacking/nodegoat.md"
+  ],
+  "openapi": [
+   "digitalreplica/hacking/openapi.md"
+  ],
+  "operating_systems": [
+   "digitalreplica/hacking/operating_systems.md"
+  ],
+  "reverse%20shell": [
+   "digitalreplica/hacking/reverse shell.md"
+  ],
+  "rfid_badge_reader": [
+   "digitalreplica/hacking/rfid_badge_reader.md"
+  ],
+  "rootabaga": [
+   "digitalreplica/hacking/rootabaga.md"
+  ],
+  "saml": [
+   "digitalreplica/hacking/saml.md"
+  ],
+  "smtp": [
+   "digitalreplica/hacking/smtp.md"
+  ],
+  "sqlmap": [
+   "digitalreplica/hacking/sqlmap.md"
+  ],
+  "ssrf": [
+   "digitalreplica/hacking/ssrf.md"
+  ],
+  "tools": [
+   "digitalreplica/hacking/tools-burp.md",
+   "digitalreplica/hacking/tools-firefox.md",
+   "digitalreplica/hacking/tools-ngrok.md",
+   "digitalreplica/hacking/tools-nuclei.md",
+   "digitalreplica/hacking/tools-oclhashcat.md",
+   "digitalreplica/hacking/tools-recon_ng.md",
+   "digitalreplica/hacking/tools-testssl.md"
+  ],
+  "burp": [
+   "digitalreplica/hacking/tools-burp.md"
+  ],
+  "firefox": [
+   "digitalreplica/hacking/tools-firefox.md",
+   "digitalreplica/technology/firefox.md"
+  ],
+  "ngrok": [
+   "digitalreplica/hacking/tools-ngrok.md"
+  ],
+  "nuclei": [
+   "digitalreplica/hacking/tools-nuclei.md"
+  ],
+  "oclhashcat": [
+   "digitalreplica/hacking/tools-oclhashcat.md"
+  ],
+  "recon_ng": [
+   "digitalreplica/hacking/tools-recon_ng.md"
+  ],
+  "testssl": [
+   "digitalreplica/hacking/tools-testssl.md"
+  ],
+  "web": [
+   "digitalreplica/hacking/web-html.md",
+   "digitalreplica/hacking/web-node_js.md",
+   "digitalreplica/hacking/web-postmessage.md",
+   "digitalreplica/hacking/web-xss.md"
+  ],
+  "html": [
+   "digitalreplica/hacking/web-html.md"
+  ],
+  "node_js": [
+   "digitalreplica/hacking/web-node_js.md",
+   "digitalreplica/technology/node_js.md"
+  ],
+  "postmessage": [
+   "digitalreplica/hacking/web-postmessage.md"
+  ],
+  "xss": [
+   "digitalreplica/hacking/web-xss.md"
+  ],
+  "webfilters": [
+   "digitalreplica/hacking/webfilters.md"
+  ],
+  "wireless": [
+   "digitalreplica/hacking/wireless.md"
+  ],
+  "writing": [
+   "digitalreplica/hacking/writing-exploits.md"
+  ],
+  "exploits": [
+   "digitalreplica/hacking/writing-exploits.md"
+  ],
+  "technology": [
+   "digitalreplica/technology/README.md",
+   "digitalreplica/technology/ai.md",
+   "digitalreplica/technology/anaconda.md",
+   "digitalreplica/technology/angular.md",
+   "digitalreplica/technology/atom.md",
+   "digitalreplica/technology/aws.md",
+   "digitalreplica/technology/bash.md",
+   "digitalreplica/technology/cucumber.md",
+   "digitalreplica/technology/curl.md",
+   "digitalreplica/technology/firefox.md",
+   "digitalreplica/technology/git.md",
+   "digitalreplica/technology/github.md",
+   "digitalreplica/technology/graphql.md",
+   "digitalreplica/technology/http.md",
+   "digitalreplica/technology/jq.md",
+   "digitalreplica/technology/linux.md",
+   "digitalreplica/technology/macos.md",
+   "digitalreplica/technology/markdown.md",
+   "digitalreplica/technology/node_js.md",
+   "digitalreplica/technology/openwrt.md",
+   "digitalreplica/technology/python.md",
+   "digitalreplica/technology/raspberry_pi.md",
+   "digitalreplica/technology/redis.md",
+   "digitalreplica/technology/unicode.md",
+   "digitalreplica/technology/uuid.md",
+   "digitalreplica/technology/webhooks.md",
+   "digitalreplica/technology/zsh.md"
+  ],
+  "ai": [
+   "digitalreplica/technology/ai.md"
+  ],
+  "anaconda": [
+   "digitalreplica/technology/anaconda.md"
+  ],
+  "atom": [
+   "digitalreplica/technology/atom.md"
+  ],
+  "cucumber": [
+   "digitalreplica/technology/cucumber.md"
+  ],
+  "curl": [
+   "digitalreplica/technology/curl.md"
+  ],
+  "git": [
+   "digitalreplica/technology/git.md",
+   "digitalreplica/git-notes/README.md",
+   "digitalreplica/git-notes/advanced-topics.md",
+   "digitalreplica/git-knowledge/README.md",
+   "digitalreplica/git-knowledge/musings.md"
+  ],
+  "github": [
+   "digitalreplica/technology/github.md"
+  ],
+  "graphql": [
+   "digitalreplica/technology/graphql.md"
+  ],
+  "http": [
+   "digitalreplica/technology/http.md"
+  ],
+  "jq": [
+   "digitalreplica/technology/jq.md"
+  ],
+  "linux": [
+   "digitalreplica/technology/linux.md"
+  ],
+  "macos": [
+   "digitalreplica/technology/macos.md"
+  ],
+  "markdown": [
+   "digitalreplica/technology/markdown.md"
+  ],
+  "openwrt": [
+   "digitalreplica/technology/openwrt.md"
+  ],
+  "python": [
+   "digitalreplica/technology/python.md"
+  ],
+  "raspberry_pi": [
+   "digitalreplica/technology/raspberry_pi.md"
+  ],
+  "redis": [
+   "digitalreplica/technology/redis.md"
+  ],
+  "unicode": [
+   "digitalreplica/technology/unicode.md"
+  ],
+  "uuid": [
+   "digitalreplica/technology/uuid.md"
+  ],
+  "webhooks": [
+   "digitalreplica/technology/webhooks.md"
+  ],
+  "zsh": [
+   "digitalreplica/technology/zsh.md"
+  ],
+  "notes": [
+   "digitalreplica/git-notes/README.md",
+   "digitalreplica/git-notes/advanced-topics.md"
+  ],
+  "advanced": [
+   "digitalreplica/git-notes/advanced-topics.md"
+  ],
+  "topics": [
+   "digitalreplica/git-notes/advanced-topics.md"
+  ],
+  "knowledge": [
+   "digitalreplica/git-knowledge/README.md",
+   "digitalreplica/git-knowledge/musings.md"
+  ],
+  "musings": [
+   "digitalreplica/git-knowledge/musings.md"
+  ]
+ },
+ "files": {
+  "digitalreplica/hacking/README.md": {
+   "name": "README.md",
+   "path": "README.md",
+   "size": 133,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/README.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/angular.md": {
+   "name": "angular.md",
+   "path": "angular.md",
+   "size": 483,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/angular.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/aws-iam_assume_role.md": {
+   "name": "aws-iam_assume_role.md",
+   "path": "aws-iam_assume_role.md",
+   "size": 4321,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/aws-iam_assume_role.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/aws-s3.md": {
+   "name": "aws-s3.md",
+   "path": "aws-s3.md",
+   "size": 1181,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/aws-s3.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/aws-tokens.md": {
+   "name": "aws-tokens.md",
+   "path": "aws-tokens.md",
+   "size": 1083,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/aws-tokens.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/aws.md": {
+   "name": "aws.md",
+   "path": "aws.md",
+   "size": 4508,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/aws.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/bash.md": {
+   "name": "bash.md",
+   "path": "bash.md",
+   "size": 218,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/bash.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/browsers.md": {
+   "name": "browsers.md",
+   "path": "browsers.md",
+   "size": 1876,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/browsers.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/dns-recon.md": {
+   "name": "dns-recon.md",
+   "path": "dns-recon.md",
+   "size": 796,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/dns-recon.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/dns-spoofing.md": {
+   "name": "dns-spoofing.md",
+   "path": "dns-spoofing.md",
+   "size": 434,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/dns-spoofing.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/howto-fake_email.md": {
+   "name": "howto-fake_email.md",
+   "path": "howto-fake_email.md",
+   "size": 190,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/howto-fake_email.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/howto-local_web_server.md": {
+   "name": "howto-local_web_server.md",
+   "path": "howto-local_web_server.md",
+   "size": 178,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/howto-local_web_server.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/kali.md": {
+   "name": "kali.md",
+   "path": "kali.md",
+   "size": 195,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/kali.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/malware.md": {
+   "name": "malware.md",
+   "path": "malware.md",
+   "size": 560,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/malware.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/mitmproxy.md": {
+   "name": "mitmproxy.md",
+   "path": "mitmproxy.md",
+   "size": 156,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/mitmproxy.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/mongo.md": {
+   "name": "mongo.md",
+   "path": "mongo.md",
+   "size": 300,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/mongo.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/nmap.md": {
+   "name": "nmap.md",
+   "path": "nmap.md",
+   "size": 2506,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/nmap.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/nodegoat.md": {
+   "name": "nodegoat.md",
+   "path": "nodegoat.md",
+   "size": 653,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/nodegoat.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/openapi.md": {
+   "name": "openapi.md",
+   "path": "openapi.md",
+   "size": 388,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/openapi.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/operating_systems.md": {
+   "name": "operating_systems.md",
+   "path": "operating_systems.md",
+   "size": 536,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/operating_systems.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/reverse shell.md": {
+   "name": "reverse shell.md",
+   "path": "reverse shell.md",
+   "size": 1928,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/reverse%20shell.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/rfid_badge_reader.md": {
+   "name": "rfid_badge_reader.md",
+   "path": "rfid_badge_reader.md",
+   "size": 678,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/rfid_badge_reader.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/rootabaga.md": {
+   "name": "rootabaga.md",
+   "path": "rootabaga.md",
+   "size": 511,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/rootabaga.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/saml.md": {
+   "name": "saml.md",
+   "path": "saml.md",
+   "size": 1219,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/saml.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/smtp.md": {
+   "name": "smtp.md",
+   "path": "smtp.md",
+   "size": 396,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/smtp.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/sqlmap.md": {
+   "name": "sqlmap.md",
+   "path": "sqlmap.md",
+   "size": 339,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/sqlmap.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/ssrf.md": {
+   "name": "ssrf.md",
+   "path": "ssrf.md",
+   "size": 127,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/ssrf.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/tools-burp.md": {
+   "name": "tools-burp.md",
+   "path": "tools-burp.md",
+   "size": 1203,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/tools-burp.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/tools-firefox.md": {
+   "name": "tools-firefox.md",
+   "path": "tools-firefox.md",
+   "size": 635,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/tools-firefox.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/tools-ngrok.md": {
+   "name": "tools-ngrok.md",
+   "path": "tools-ngrok.md",
+   "size": 262,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/tools-ngrok.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/tools-nuclei.md": {
+   "name": "tools-nuclei.md",
+   "path": "tools-nuclei.md",
+   "size": 106,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/tools-nuclei.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/tools-oclhashcat.md": {
+   "name": "tools-oclhashcat.md",
+   "path": "tools-oclhashcat.md",
+   "size": 3563,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/tools-oclhashcat.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/tools-recon_ng.md": {
+   "name": "tools-recon_ng.md",
+   "path": "tools-recon_ng.md",
+   "size": 1425,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/tools-recon_ng.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/tools-testssl.md": {
+   "name": "tools-testssl.md",
+   "path": "tools-testssl.md",
+   "size": 326,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/tools-testssl.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/web-html.md": {
+   "name": "web-html.md",
+   "path": "web-html.md",
+   "size": 752,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/web-html.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/web-node_js.md": {
+   "name": "web-node_js.md",
+   "path": "web-node_js.md",
+   "size": 634,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/web-node_js.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/web-postmessage.md": {
+   "name": "web-postmessage.md",
+   "path": "web-postmessage.md",
+   "size": 222,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/web-postmessage.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/web-xss.md": {
+   "name": "web-xss.md",
+   "path": "web-xss.md",
+   "size": 3030,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/web-xss.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/webfilters.md": {
+   "name": "webfilters.md",
+   "path": "webfilters.md",
+   "size": 738,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/webfilters.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/wireless.md": {
+   "name": "wireless.md",
+   "path": "wireless.md",
+   "size": 347,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/wireless.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/hacking/writing-exploits.md": {
+   "name": "writing-exploits.md",
+   "path": "writing-exploits.md",
+   "size": 830,
+   "html_url": "https://github.com/digitalreplica/hacking/blob/main/writing-exploits.md",
+   "repo": "digitalreplica/hacking"
+  },
+  "digitalreplica/technology/README.md": {
+   "name": "README.md",
+   "path": "README.md",
+   "size": 78,
+   "html_url": "https://github.com/digitalreplica/technology/blob/main/README.md",
+   "repo": "digitalreplica/technology"
+  },
+  "digitalreplica/technology/ai.md": {
+   "name": "ai.md",
+   "path": "ai.md",
+   "size": 871,
+   "html_url": "https://github.com/digitalreplica/technology/blob/main/ai.md",
+   "repo": "digitalreplica/technology"
+  },
+  "digitalreplica/technology/anaconda.md": {
+   "name": "anaconda.md",
+   "path": "anaconda.md",
+   "size": 449,
+   "html_url": "https://github.com/digitalreplica/technology/blob/main/anaconda.md",
+   "repo": "digitalreplica/technology"
+  },
+  "digitalreplica/technology/angular.md": {
+   "name": "angular.md",
+   "path": "angular.md",
+   "size": 1353,
+   "html_url": "https://github.com/digitalreplica/technology/blob/main/angular.md",
+   "repo": "digitalreplica/technology"
+  },
+  "digitalreplica/technology/atom.md": {
+   "name": "atom.md",
+   "path": "atom.md",
+   "size": 984,
+   "html_url": "https://github.com/digitalreplica/technology/blob/main/atom.md",
+   "repo": "digitalreplica/technology"
+  },
+  "digitalreplica/technology/aws.md": {
+   "name": "aws.md",
+   "path": "aws.md",
+   "size": 463,
+   "html_url": "https://github.com/digitalreplica/technology/blob/main/aws.md",
+   "repo": "digitalreplica/technology"
+  },
+  "digitalreplica/technology/bash.md": {
+   "name": "bash.md",
+   "path": "bash.md",
+   "size": 655,
+   "html_url": "https://github.com/digitalreplica/technology/blob/main/bash.md",
+   "repo": "digitalreplica/technology"
+  },
+  "digitalreplica/technology/cucumber.md": {
+   "name": "cucumber.md",
+   "path": "cucumber.md",
+   "size": 473,
+   "html_url": "https://github.com/digitalreplica/technology/blob/main/cucumber.md",
+   "repo": "digitalreplica/technology"
+  },
+  "digitalreplica/technology/curl.md": {
+   "name": "curl.md",
+   "path": "curl.md",
+   "size": 353,
+   "html_url": "https://github.com/digitalreplica/technology/blob/main/curl.md",
+   "repo": "digitalreplica/technology"
+  },
+  "digitalreplica/technology/firefox.md": {
+   "name": "firefox.md",
+   "path": "firefox.md",
+   "size": 91,
+   "html_url": "https://github.com/digitalreplica/technology/blob/main/firefox.md",
+   "repo": "digitalreplica/technology"
+  },
+  "digitalreplica/technology/git.md": {
+   "name": "git.md",
+   "path": "git.md",
+   "size": 1795,
+   "html_url": "https://github.com/digitalreplica/technology/blob/main/git.md",
+   "repo": "digitalreplica/technology"
+  },
+  "digitalreplica/technology/github.md": {
+   "name": "github.md",
+   "path": "github.md",
+   "size": 3134,
+   "html_url": "https://github.com/digitalreplica/technology/blob/main/github.md",
+   "repo": "digitalreplica/technology"
+  },
+  "digitalreplica/technology/graphql.md": {
+   "name": "graphql.md",
+   "path": "graphql.md",
+   "size": 38,
+   "html_url": "https://github.com/digitalreplica/technology/blob/main/graphql.md",
+   "repo": "digitalreplica/technology"
+  },
+  "digitalreplica/technology/http.md": {
+   "name": "http.md",
+   "path": "http.md",
+   "size": 123,
+   "html_url": "https://github.com/digitalreplica/technology/blob/main/http.md",
+   "repo": "digitalreplica/technology"
+  },
+  "digitalreplica/technology/jq.md": {
+   "name": "jq.md",
+   "path": "jq.md",
+   "size": 763,
+   "html_url": "https://github.com/digitalreplica/technology/blob/main/jq.md",
+   "repo": "digitalreplica/technology"
+  },
+  "digitalreplica/technology/linux.md": {
+   "name": "linux.md",
+   "path": "linux.md",
+   "size": 139,
+   "html_url": "https://github.com/digitalreplica/technology/blob/main/linux.md",
+   "repo": "digitalreplica/technology"
+  },
+  "digitalreplica/technology/macos.md": {
+   "name": "macos.md",
+   "path": "macos.md",
+   "size": 3684,
+   "html_url": "https://github.com/digitalreplica/technology/blob/main/macos.md",
+   "repo": "digitalreplica/technology"
+  },
+  "digitalreplica/technology/markdown.md": {
+   "name": "markdown.md",
+   "path": "markdown.md",
+   "size": 1278,
+   "html_url": "https://github.com/digitalreplica/technology/blob/main/markdown.md",
+   "repo": "digitalreplica/technology"
+  },
+  "digitalreplica/technology/node_js.md": {
+   "name": "node_js.md",
+   "path": "node_js.md",
+   "size": 244,
+   "html_url": "https://github.com/digitalreplica/technology/blob/main/node_js.md",
+   "repo": "digitalreplica/technology"
+  },
+  "digitalreplica/technology/openwrt.md": {
+   "name": "openwrt.md",
+   "path": "openwrt.md",
+   "size": 111,
+   "html_url": "https://github.com/digitalreplica/technology/blob/main/openwrt.md",
+   "repo": "digitalreplica/technology"
+  },
+  "digitalreplica/technology/python.md": {
+   "name": "python.md",
+   "path": "python.md",
+   "size": 141,
+   "html_url": "https://github.com/digitalreplica/technology/blob/main/python.md",
+   "repo": "digitalreplica/technology"
+  },
+  "digitalreplica/technology/raspberry_pi.md": {
+   "name": "raspberry_pi.md",
+   "path": "raspberry_pi.md",
+   "size": 1667,
+   "html_url": "https://github.com/digitalreplica/technology/blob/main/raspberry_pi.md",
+   "repo": "digitalreplica/technology"
+  },
+  "digitalreplica/technology/redis.md": {
+   "name": "redis.md",
+   "path": "redis.md",
+   "size": 98,
+   "html_url": "https://github.com/digitalreplica/technology/blob/main/redis.md",
+   "repo": "digitalreplica/technology"
+  },
+  "digitalreplica/technology/unicode.md": {
+   "name": "unicode.md",
+   "path": "unicode.md",
+   "size": 305,
+   "html_url": "https://github.com/digitalreplica/technology/blob/main/unicode.md",
+   "repo": "digitalreplica/technology"
+  },
+  "digitalreplica/technology/uuid.md": {
+   "name": "uuid.md",
+   "path": "uuid.md",
+   "size": 118,
+   "html_url": "https://github.com/digitalreplica/technology/blob/main/uuid.md",
+   "repo": "digitalreplica/technology"
+  },
+  "digitalreplica/technology/webhooks.md": {
+   "name": "webhooks.md",
+   "path": "webhooks.md",
+   "size": 170,
+   "html_url": "https://github.com/digitalreplica/technology/blob/main/webhooks.md",
+   "repo": "digitalreplica/technology"
+  },
+  "digitalreplica/technology/zsh.md": {
+   "name": "zsh.md",
+   "path": "zsh.md",
+   "size": 201,
+   "html_url": "https://github.com/digitalreplica/technology/blob/main/zsh.md",
+   "repo": "digitalreplica/technology"
+  },
+  "digitalreplica/git-notes/README.md": {
+   "name": "README.md",
+   "path": "README.md",
+   "size": 4862,
+   "html_url": "https://github.com/digitalreplica/git-notes/blob/main/README.md",
+   "repo": "digitalreplica/git-notes"
+  },
+  "digitalreplica/git-notes/advanced-topics.md": {
+   "name": "advanced-topics.md",
+   "path": "advanced-topics.md",
+   "size": 5490,
+   "html_url": "https://github.com/digitalreplica/git-notes/blob/main/advanced-topics.md",
+   "repo": "digitalreplica/git-notes"
+  },
+  "digitalreplica/git-knowledge/README.md": {
+   "name": "README.md",
+   "path": "README.md",
+   "size": 5904,
+   "html_url": "https://github.com/digitalreplica/git-knowledge/blob/main/README.md",
+   "repo": "digitalreplica/git-knowledge"
+  },
+  "digitalreplica/git-knowledge/musings.md": {
+   "name": "musings.md",
+   "path": "musings.md",
+   "size": 1164,
+   "html_url": "https://github.com/digitalreplica/git-knowledge/blob/main/musings.md",
+   "repo": "digitalreplica/git-knowledge"
+  }
+ }
+}
