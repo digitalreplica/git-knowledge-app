@@ -25,6 +25,12 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      - name: Create knowledge.json file
+        uses: digitalreplica/hello-world-javascript-action@main
+        with:
+          repo-token: '${{ secrets.GITHUB_TOKEN }}'
+          repo-list-path: 'repos.txt'
+          knowledge-json-path: 'src/assets/knowledge.json'
       - name: Use Node.js 12.x
         uses: actions/setup-node@v2
         with:
