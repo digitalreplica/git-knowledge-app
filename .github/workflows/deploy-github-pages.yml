@@ -31,13 +31,14 @@ jobs:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           repo-list-path: 'repos.txt'
           knowledge-json-path: 'src/assets/knowledge.json'
-      - name: Use Node.js 12.x
+      - name: Use Node.js 12
         uses: actions/setup-node@v2
         with:
-          node-version: 12.x
-      - name: Prepare and deploy
+          node-version: '12'
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm install
+      - name: Deploy to GitHub pages using angular-cli-ghpages
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          npm install
-          npm run ng -- deploy --base-href='/git-knowledge-app/' --name="deploy-bot" --email=deploybot@digitalreplica.org
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run ng -- deploy --base-href='/git-knowledge-app/' --name="deploy-bot" --email=deploybot@digitalreplica.org
