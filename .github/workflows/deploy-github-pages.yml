@@ -26,7 +26,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       - name: Create knowledge.json file
-        uses: digitalreplica/hello-world-javascript-action@main
+        uses: digitalreplica/git-knowledge-json-action@main
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           repo-list-path: 'repos.txt'
