@@ -1,4 +1,0 @@
-digitalreplica/hacking
-digitalreplica/technology
-digitalreplica/git-notes
-digitalreplica/git-knowledge
